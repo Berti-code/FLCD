@@ -1,0 +1,50 @@
+﻿P1: Min of 3 numbers
+var a
+var b
+var c
+if a < b && a < c
+    print a
+if b < a && b < c
+    print b
+if c < a && c < b 
+    print c
+
+
+P2: GCD
+var a
+var b
+var res
+if a == 0
+    res = a
+if b == 0
+    res = b
+while a != b
+    if a > b
+        a = a - b
+    if b > a
+        b = b - a
+res = a
+print res
+
+
+P3: Sum of N numbers
+var num[10]
+var sum
+var i
+var n
+sum = 0
+read n
+for i = 0, i < n, i = i + 1
+    sum = sum + num[i]
+print sum
+    
+P1Err:
+var a
+var b
+var c
+if a < b && a < c
+    print a
+if b < a && b < c{
+    print b
+if c < a && c < b 
+    print c;
