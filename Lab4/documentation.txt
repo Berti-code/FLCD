@@ -1,0 +1,20 @@
+The input file should contain, line by line the following:
+From the first line it reads all the states separated by comma.
+On the second line the file should contain the alphabet, separated by comma.
+On the third line the file will have the final state.
+And on the fourth line the file contains the final states separated by comma.
+On the next lines the form will have to contain transitions.
+
+The pattern of a transition is the following:
+INITIAL_STATE, VALUE = RESULTING_STATE
+
+The sequences accepted by the finite automata are defined by the regular expression:
+0*1+0
+
+parseTransitions:
+    This method creates a dictionary that will be used to store the transitions.
+    This dictionary will have states as keys, and for each key it will store as a value for each key
+    a list of dictionaries that show the final states for each value in the alphabet.
+
+fromFile:
+    This method parses the file and it populates the transitions table using parseTransition.
